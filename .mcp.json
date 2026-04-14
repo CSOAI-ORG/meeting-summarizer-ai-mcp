@@ -1,20 +1,6 @@
 {
   "name": "meeting-summarizer-ai-mcp",
-  "description": "MEOK AI Labs \u2014 Meeting Summarizer tools for AI agents and LLMs",
-  "vendor": "MEOK AI Labs",
-  "homepage": "https://meok.ai",
-  "repository": "https://github.com/CSOAI-ORG/meeting-summarizer-ai-mcp",
-  "runtime": "python",
-  "entrypoint": "server.py",
-  "tools": [
-    "summarize_transcript"
-  ],
-  "categories": [
-    "Productivity",
-    "Communication"
-  ],
-  "pricing": {
-    "free": "50 calls/day",
-    "pro": "$9/mo"
-  }
+  "description": "Meeting Summarizer Ai Mcp \u2014 Summarize meeting transcripts into action items and decisions.",
+  "version": "1.0.0",
+  "tools": []
 }

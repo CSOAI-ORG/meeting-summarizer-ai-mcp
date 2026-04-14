@@ -1,10 +1,5 @@
 name: meeting-summarizer-ai-mcp
-description: "MEOK AI Labs — Meeting Summarizer tools for AI agents and LLMs"
-vendor: MEOK AI Labs
-homepage: https://meok.ai
-repository: https://github.com/CSOAI-ORG/meeting-summarizer-ai-mcp
-license: MIT
-categories: [Productivity, Communication]
-tags: [meeting-summary, meeting-notes, transcript-analysis, meeting-minutes]
-runtime: python
-entrypoint: server.py
+description: "Meeting Summarizer Ai Mcp \u2014 Summarize meeting transcripts into\
+  \ action items and decisions."
+version: 1.0.0
+tools: []
