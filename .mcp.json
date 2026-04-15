@@ -1,6 +1,6 @@
 {
   "name": "meeting-summarizer-ai-mcp",
-  "description": "> **By [MEOK AI Labs](https://meok.ai)** \u2014 Summarize meeting transcripts, extract action items, identify decisions, and generate follow-up emai",
+  "description": "Meeting Summarizer Ai MCP server. Tools: summarize meeting, extract action items, identify decisions. Built by MEOK AI Labs.",
   "version": "1.0.0",
   "tools": [
     {

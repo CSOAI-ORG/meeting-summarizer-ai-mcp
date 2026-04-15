@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 [project]
 name = "meeting-summarizer-ai-mcp"
 version = "1.0.0"
-description = "MEOK AI Labs — meeting-summarizer-ai-mcp"
+description = "Meeting Summarizer Ai MCP server. Tools: summarize meeting, extract action items, identify decisions. Built by MEOK AI Labs."
 license = {file = "LICENSE"}
 requires-python = ">=3.10"
 authors = [{name = "MEOK AI Labs", email = "nicholas@meok.ai"}]

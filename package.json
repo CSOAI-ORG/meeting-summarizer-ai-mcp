@@ -1,7 +1,7 @@
 {
   "name": "meeting-summarizer-ai-mcp",
   "version": "1.0.0",
-  "description": "MEOK AI Labs — meeting summarizer MCP Server",
+  "description": "Meeting Summarizer Ai MCP server. Tools: summarize meeting, extract action items, identify decisions. Built by MEOK AI Labs.",
   "main": "server.py",
   "mcp": {
     "name": "meeting summarizer",
@@ -9,10 +9,22 @@
     "homepage": "https://meok.ai",
     "repository": "https://github.com/CSOAI-ORG/meeting-summarizer-ai-mcp",
     "runtime": "python",
-    "tags": ["mcp", "mcp-server", "meok-ai-labs", "ai-tools"]
+    "tags": [
+      "mcp",
+      "mcp-server",
+      "meok-ai-labs",
+      "ai-tools"
+    ]
   },
-  "keywords": ["mcp", "mcp-server", "meok-ai-labs"],
+  "keywords": [
+    "mcp",
+    "mcp-server",
+    "meok-ai-labs"
+  ],
   "author": "MEOK AI Labs <nicholas@meok.ai>",
   "license": "MIT",
-  "repository": {"type": "git", "url": "https://github.com/CSOAI-ORG/meeting-summarizer-ai-mcp"}
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/CSOAI-ORG/meeting-summarizer-ai-mcp"
+  }
 }
