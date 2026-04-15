@@ -1,7 +1,40 @@
 name: meeting-summarizer-ai-mcp
-description: MEOK AI Labs MCP Server
+description: Summarize meeting transcripts, extract action items, identify decisions,
+  and generate follow-up emai
 version: 1.0.0
 tools:
-- name: summarize_transcript
-  description: Summarize a meeting transcript
-  parameters: []
+- name: summarize_meeting
+  description: Summarize a meeting transcript into key points, topics discussed, and
+    participant info.
+  parameters:
+  - name: transcript
+    type: string
+    required: true
+  - name: max_sentences
+    type: integer
+    required: false
+- name: extract_action_items
+  description: Extract action items and tasks from meeting transcript with assignee
+    detection.
+  parameters:
+  - name: transcript
+    type: string
+    required: true
+- name: identify_decisions
+  description: Identify key decisions made during a meeting from the transcript.
+  parameters:
+  - name: transcript
+    type: string
+    required: true
+- name: generate_followup
+  description: Generate a follow-up email draft from a meeting transcript.
+  parameters:
+  - name: transcript
+    type: string
+    required: true
+  - name: meeting_title
+    type: string
+    required: false
+  - name: recipients
+    type: array
+    required: false

@@ -1,15 +1,75 @@
 {
   "name": "meeting-summarizer-ai-mcp",
-  "description": "> **By [MEOK AI Labs](https://meok.ai)** \u2014 MEOK AI Labs MCP Server",
+  "description": "> **By [MEOK AI Labs](https://meok.ai)** \u2014 Summarize meeting transcripts, extract action items, identify decisions, and generate follow-up emai",
   "version": "1.0.0",
   "tools": [
     {
-      "name": "summarize_transcript",
-      "description": "Summarize a meeting transcript",
+      "name": "summarize_meeting",
+      "description": "Summarize a meeting transcript into key points, topics discussed, and participant info.",
       "parameters": {
         "type": "object",
-        "properties": {},
-        "required": []
+        "properties": {
+          "transcript": {
+            "type": "string"
+          },
+          "max_sentences": {
+            "type": "integer"
+          }
+        },
+        "required": [
+          "transcript"
+        ]
+      }
+    },
+    {
+      "name": "extract_action_items",
+      "description": "Extract action items and tasks from meeting transcript with assignee detection.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "transcript": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "transcript"
+        ]
+      }
+    },
+    {
+      "name": "identify_decisions",
+      "description": "Identify key decisions made during a meeting from the transcript.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "transcript": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "transcript"
+        ]
+      }
+    },
+    {
+      "name": "generate_followup",
+      "description": "Generate a follow-up email draft from a meeting transcript.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "transcript": {
+            "type": "string"
+          },
+          "meeting_title": {
+            "type": "string"
+          },
+          "recipients": {
+            "type": "array"
+          }
+        },
+        "required": [
+          "transcript"
+        ]
       }
     }
   ]
