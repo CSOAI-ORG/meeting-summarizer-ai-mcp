@@ -1,0 +1,54 @@
+{
+  "name": "meeting-summarizer-ai",
+  "description": "Summarize meeting transcripts, extract action items, identify decisions, and generate follow-up emails.",
+  "version": "1.0.0",
+  "protocol_version": "2025-11-25",
+  "publisher": {
+    "name": "MEOK AI Labs",
+    "url": "https://meok.ai",
+    "email": "nicholas@meok.ai"
+  },
+  "repository": "https://github.com/CSOAI-ORG/meeting-summarizer-ai-mcp",
+  "license": "MIT",
+  "transport": [
+    "stdio",
+    "streamable-http"
+  ],
+  "authentication": {
+    "type": "api-key",
+    "free_tier": true,
+    "free_limit": "15 calls/day"
+  },
+  "tools": [
+    {
+      "name": "summarize_meeting",
+      "description": "Summarize a meeting transcript into key points, topics discussed, and participant info."
+    },
+    {
+      "name": "extract_action_items",
+      "description": "Extract action items and tasks from meeting transcript with assignee detection."
+    },
+    {
+      "name": "identify_decisions",
+      "description": "Identify key decisions made during a meeting from the transcript."
+    },
+    {
+      "name": "generate_followup",
+      "description": "Generate a follow-up email draft from a meeting transcript."
+    }
+  ],
+  "categories": [
+    "AI & Machine Learning",
+    "Marketing & SEO",
+    "Natural Language Processing"
+  ],
+  "pricing": {
+    "free": {
+      "calls_per_day": 15
+    },
+    "pro": {
+      "price": "$29/month",
+      "url": "https://meok.ai/pricing"
+    }
+  }
+}
