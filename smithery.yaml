@@ -1,4 +1,7 @@
 name: meeting-summarizer-ai-mcp
 description: MEOK AI Labs MCP Server
 version: 1.0.0
-tools: []
+tools:
+- name: summarize_transcript
+  description: Summarize a meeting transcript
+  parameters: []
