@@ -1,52 +1,38 @@
-# Meeting Summarizer AI
+<div align="center">
 
-> By [MEOK AI Labs](https://meok.ai) — Summarize meeting transcripts into action items, decisions, and follow-ups
+[![GitHub stars](https://img.shields.io/github/stars/CSOAI-ORG/meeting-summarizer-ai-mcp)](https://github.com/CSOAI-ORG/meeting-summarizer-ai-mcp/stargazers)
+
+# umeetingU summarizerU aiU mcp
+
+****
+
+[![npm version](https://img.shields.io/npm/v/@meok-ai/meeting-summarizer-ai-mcp)](https://www.npmjs.com/package/@meok-ai/meeting-summarizer-ai-mcp)
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+[![MEOK AI Labs](https://img.shields.io/badge/MEOK_AI_Labs-255+_servers-purple)](https://meok.ai)
+
+[Installation](#installation) · [Docs](https://csoai.org) · [Report Bug](https://github.com/CSOAI-ORG/meeting-summarizer-ai-mcp/issues)
+
+</div>
+
+---
 
 ## Installation
 
 ```bash
 pip install meeting-summarizer-ai-mcp
+# or
+npm install -g @meok-ai/meeting-summarizer-ai-mcp
 ```
 
-## Usage
+## Quick Start
 
-```bash
-python server.py
-```
+See the project repository for full documentation and examples.
 
-## Tools
+## Enterprise Support
 
-### `summarize_meeting`
-Summarize a meeting transcript into key points, topics discussed, and participant info.
-
-**Parameters:**
-- `transcript` (str): Full meeting transcript text
-- `max_sentences` (int): Maximum summary sentences (default: 5)
-
-### `extract_action_items`
-Extract action items and tasks from meeting transcript with assignee detection and priority levels.
-
-**Parameters:**
-- `transcript` (str): Meeting transcript
-
-### `identify_decisions`
-Identify key decisions made during a meeting from the transcript, categorized by type.
-
-**Parameters:**
-- `transcript` (str): Meeting transcript
-
-### `generate_followup`
-Generate a follow-up email draft from a meeting transcript.
-
-**Parameters:**
-- `transcript` (str): Meeting transcript
-- `meeting_title` (str): Title of the meeting (default: "Team Meeting")
-- `recipients` (list[str]): Email recipients
-
-## Authentication
-
-Free tier: 15 calls/day. Upgrade at [meok.ai/pricing](https://meok.ai/pricing) for unlimited access.
+- 📧 nicholas@csoai.org
+- 🌐 [CSOAI.org](https://csoai.org)
 
 ## License
 
-MIT — MEOK AI Labs
+MIT © [CSOAI](https://csoai.org)
