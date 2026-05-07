@@ -69,6 +69,12 @@ def summarize_meeting(transcript: str, max_sentences: int = 5, api_key: str = ""
     When NOT to use:
         Not suitable for real-time production decision-making without
         human review of results.
+
+    Args:
+        transcript (str): The transcript to analyze or process.
+        max_sentences (int): The max sentences to analyze or process.
+        api_key (str): The api key to analyze or process.
+
     Behavioral Transparency:
         - Side Effects: This tool is read-only and produces no side effects. It does not modify
           any external state, databases, or files. All output is computed in-memory and returned
@@ -150,6 +156,11 @@ def extract_action_items(transcript: str, api_key: str = "") -> str:
     When NOT to use:
         Not suitable for real-time production decision-making without
         human review of results.
+
+    Args:
+        transcript (str): The transcript to analyze or process.
+        api_key (str): The api key to analyze or process.
+
     Behavioral Transparency:
         - Side Effects: This tool is read-only and produces no side effects. It does not modify
           any external state, databases, or files. All output is computed in-memory and returned
@@ -235,6 +246,11 @@ def identify_decisions(transcript: str, api_key: str = "") -> str:
     When NOT to use:
         Not suitable for real-time production decision-making without
         human review of results.
+
+    Args:
+        transcript (str): The transcript to analyze or process.
+        api_key (str): The api key to analyze or process.
+
     Behavioral Transparency:
         - Side Effects: This tool is read-only and produces no side effects. It does not modify
           any external state, databases, or files. All output is computed in-memory and returned
@@ -314,6 +330,13 @@ def generate_followup(transcript: str, meeting_title: str = "Team Meeting", reci
     When NOT to use:
         Not suitable for real-time production decision-making without
         human review of results.
+
+    Args:
+        transcript (str): The transcript to analyze or process.
+        meeting_title (str): The meeting title to analyze or process.
+        recipients (list[str]): The recipients to analyze or process.
+        api_key (str): The api key to analyze or process.
+
     Behavioral Transparency:
         - Side Effects: This tool is read-only and produces no side effects. It does not modify
           any external state, databases, or files. All output is computed in-memory and returned
