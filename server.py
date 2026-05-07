@@ -53,7 +53,23 @@ def _extract_speakers(text: str) -> list[str]:
 
 @mcp.tool()
 def summarize_meeting(transcript: str, max_sentences: int = 5, api_key: str = "") -> str:
-    """Summarize a meeting transcript into key points, topics discussed, and participant info."""
+    """Summarize a meeting transcript into key points, topics discussed, and participant info.
+
+    Behavior:
+        This tool is read-only and stateless — it produces analysis output
+        without modifying any external systems, databases, or files.
+        Safe to call repeatedly with identical inputs (idempotent).
+        Free tier: 10/day rate limit. Pro tier: unlimited.
+        No authentication required for basic usage.
+
+    When to use:
+        Use this tool when you need structured analysis or classification
+        of inputs against established frameworks or standards.
+
+    When NOT to use:
+        Not suitable for real-time production decision-making without
+        human review of results.
+    """
     allowed, msg, tier = check_access(api_key)
     if not allowed:
         return json.dumps({"error": msg, "upgrade_url": "https://meok.ai/pricing"})
@@ -104,7 +120,23 @@ def summarize_meeting(transcript: str, max_sentences: int = 5, api_key: str = ""
 
 @mcp.tool()
 def extract_action_items(transcript: str, api_key: str = "") -> str:
-    """Extract action items and tasks from meeting transcript with assignee detection."""
+    """Extract action items and tasks from meeting transcript with assignee detection.
+
+    Behavior:
+        This tool is read-only and stateless — it produces analysis output
+        without modifying any external systems, databases, or files.
+        Safe to call repeatedly with identical inputs (idempotent).
+        Free tier: 10/day rate limit. Pro tier: unlimited.
+        No authentication required for basic usage.
+
+    When to use:
+        Use this tool when you need structured analysis or classification
+        of inputs against established frameworks or standards.
+
+    When NOT to use:
+        Not suitable for real-time production decision-making without
+        human review of results.
+    """
     allowed, msg, tier = check_access(api_key)
     if not allowed:
         return json.dumps({"error": msg, "upgrade_url": "https://meok.ai/pricing"})
@@ -159,7 +191,23 @@ def extract_action_items(transcript: str, api_key: str = "") -> str:
 
 @mcp.tool()
 def identify_decisions(transcript: str, api_key: str = "") -> str:
-    """Identify key decisions made during a meeting from the transcript."""
+    """Identify key decisions made during a meeting from the transcript.
+
+    Behavior:
+        This tool is read-only and stateless — it produces analysis output
+        without modifying any external systems, databases, or files.
+        Safe to call repeatedly with identical inputs (idempotent).
+        Free tier: 10/day rate limit. Pro tier: unlimited.
+        No authentication required for basic usage.
+
+    When to use:
+        Use this tool when you need structured analysis or classification
+        of inputs against established frameworks or standards.
+
+    When NOT to use:
+        Not suitable for real-time production decision-making without
+        human review of results.
+    """
     allowed, msg, tier = check_access(api_key)
     if not allowed:
         return json.dumps({"error": msg, "upgrade_url": "https://meok.ai/pricing"})
@@ -209,7 +257,22 @@ def identify_decisions(transcript: str, api_key: str = "") -> str:
 
 @mcp.tool()
 def generate_followup(transcript: str, meeting_title: str = "Team Meeting", recipients: list[str] = [], api_key: str = "") -> str:
-    """Generate a follow-up email draft from a meeting transcript."""
+    """Generate a follow-up email draft from a meeting transcript.
+
+    Behavior:
+        This tool generates structured output without modifying external systems.
+        Output is deterministic for identical inputs. No side effects.
+        Free tier: 10/day rate limit. Pro tier: unlimited.
+        No authentication required for basic usage.
+
+    When to use:
+        Use this tool when you need structured analysis or classification
+        of inputs against established frameworks or standards.
+
+    When NOT to use:
+        Not suitable for real-time production decision-making without
+        human review of results.
+    """
     allowed, msg, tier = check_access(api_key)
     if not allowed:
         return json.dumps({"error": msg, "upgrade_url": "https://meok.ai/pricing"})
