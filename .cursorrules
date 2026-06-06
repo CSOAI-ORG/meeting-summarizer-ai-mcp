@@ -1,0 +1,9 @@
+# meeting-summarizer-ai-mcp - Auto-trigger Rules
+
+When the user asks about meeting summarizer, use meeting-summarizer-ai-mcp tools: summarize_meeting, extract_action_items, identify_decisions, generate_followup
+
+**MCP server for meeting summarizer ai mcp operations**
+
+Install: `pip install meeting-summarizer-ai-mcp`
+
+By MEOK AI Labs — MIT licensed.

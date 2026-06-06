@@ -1,0 +1,25 @@
+{
+  "name": "meeting-summarizer-ai-mcp",
+  "title": "Meeting Summarizer Ai Mcp",
+  "description": "Meeting Summarizer Ai MCP server. Tools: summarize meeting, extract action items, identify decisions. Built by MEOK AI Labs.",
+  "version": "1.0.6",
+  "homepage": "https://meok.ai",
+  "license": "MIT",
+  "transport": {
+    "type": "stdio"
+  },
+  "tools": [
+    {
+      "name": "summarize_meeting"
+    },
+    {
+      "name": "extract_action_items"
+    },
+    {
+      "name": "identify_decisions"
+    },
+    {
+      "name": "generate_followup"
+    }
+  ]
+}

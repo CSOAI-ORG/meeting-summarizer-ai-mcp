@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
-"""MEOK AI Labs — meeting-summarizer-ai-mcp MCP Server. Summarize meeting transcripts into action items and decisions."""
+"""
+MEOK AI Labs — meeting-summarizer-ai-mcp MCP Server. Summarize meeting transcripts into action items and decisions."""
 
 import json
 import re
@@ -8,7 +9,6 @@ from collections import defaultdict
 
 from mcp.server.fastmcp import FastMCP
 import sys, os
-sys.path.insert(0, os.path.expanduser("~/clawd/meok-labs-engine/shared"))
 from auth_middleware import check_access
 
 FREE_DAILY_LIMIT = 15
@@ -92,7 +92,7 @@ def summarize_meeting(transcript: str, max_sentences: int = 5, api_key: str = ""
     """
     allowed, msg, tier = check_access(api_key)
     if not allowed:
-        return json.dumps({"error": msg, "upgrade_url": "https://meok.ai/pricing"})
+        return json.dumps({"error": msg, "upgrade_url": "https://councilof.ai"})
     if err := _rl(): return err
 
     sentences = _split_sentences(transcript)
@@ -178,7 +178,7 @@ def extract_action_items(transcript: str, api_key: str = "") -> str:
     """
     allowed, msg, tier = check_access(api_key)
     if not allowed:
-        return json.dumps({"error": msg, "upgrade_url": "https://meok.ai/pricing"})
+        return json.dumps({"error": msg, "upgrade_url": "https://councilof.ai"})
     if err := _rl(): return err
 
     sentences = _split_sentences(transcript)
@@ -268,7 +268,7 @@ def identify_decisions(transcript: str, api_key: str = "") -> str:
     """
     allowed, msg, tier = check_access(api_key)
     if not allowed:
-        return json.dumps({"error": msg, "upgrade_url": "https://meok.ai/pricing"})
+        return json.dumps({"error": msg, "upgrade_url": "https://councilof.ai"})
     if err := _rl(): return err
 
     sentences = _split_sentences(transcript)
@@ -354,7 +354,7 @@ def generate_followup(transcript: str, meeting_title: str = "Team Meeting", reci
     """
     allowed, msg, tier = check_access(api_key)
     if not allowed:
-        return json.dumps({"error": msg, "upgrade_url": "https://meok.ai/pricing"})
+        return json.dumps({"error": msg, "upgrade_url": "https://councilof.ai"})
     if err := _rl(): return err
 
     sentences = _split_sentences(transcript)
@@ -419,5 +419,8 @@ def generate_followup(transcript: str, meeting_title: str = "Team Meeting", reci
     }, indent=2)
 
 
-if __name__ == "__main__":
+def main():
     mcp.run()
+
+if __name__ == '__main__':
+    main()
