@@ -1,0 +1,59 @@
+{
+  "name": "meeting-summarizer-ai-mcp",
+  "description": "Meeting Summarizer Ai MCP Server by MEOK AI Labs",
+  "url": "https://proofof.ai/scorecard/meeting-summarizer-ai-mcp.html",
+  "version": "1.0.6",
+  "protocolVersion": "0.2.0",
+  "provider": {
+    "organization": "MEOK AI Labs",
+    "url": "https://meok.ai"
+  },
+  "capabilities": {
+    "streaming": false,
+    "pushNotifications": false
+  },
+  "defaultInputModes": [
+    "text"
+  ],
+  "defaultOutputModes": [
+    "text"
+  ],
+  "skills": [
+    {
+      "id": "summarize_meeting",
+      "name": "Summarize Meeting",
+      "description": "summarize_meeting via meeting-summarizer-ai-mcp",
+      "tags": [
+        "mcp",
+        "compliance"
+      ]
+    },
+    {
+      "id": "extract_action_items",
+      "name": "Extract Action Items",
+      "description": "extract_action_items via meeting-summarizer-ai-mcp",
+      "tags": [
+        "mcp",
+        "compliance"
+      ]
+    },
+    {
+      "id": "identify_decisions",
+      "name": "Identify Decisions",
+      "description": "identify_decisions via meeting-summarizer-ai-mcp",
+      "tags": [
+        "mcp",
+        "compliance"
+      ]
+    },
+    {
+      "id": "generate_followup",
+      "name": "Generate Followup",
+      "description": "generate_followup via meeting-summarizer-ai-mcp",
+      "tags": [
+        "mcp",
+        "compliance"
+      ]
+    }
+  ]
+}

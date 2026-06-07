@@ -1,0 +1,22 @@
+{
+  "acpVersion": "0.1",
+  "agent": {
+    "name": "meeting-summarizer-ai-mcp",
+    "description": "Meeting Summarizer Ai MCP Server by MEOK AI Labs",
+    "version": "1.0.6",
+    "provider": "MEOK AI Labs",
+    "interfaces": [
+      {
+        "type": "mcp",
+        "transport": "stdio",
+        "package": "meeting-summarizer-ai-mcp"
+      }
+    ],
+    "capabilities": [
+      "summarize_meeting",
+      "extract_action_items",
+      "identify_decisions",
+      "generate_followup"
+    ]
+  }
+}
